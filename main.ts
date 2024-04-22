@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import inquirer from "inquirer";
 
 let myBalance = 20000;
@@ -28,7 +30,7 @@ if (pinAnswer.pin === myPincode) {
             message : "enter your amount",
             type : "number",
         }]);
-        
+
         myBalance -= amountAnswer.amount;
         console.log("your remaining balance is: " + myBalance)
 
